@@ -1,0 +1,154 @@
+/* == CONTÉM OS CARDS ==*/
+
+.contents {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(59, 48, 99);
+}
+
+.contents h1 {
+    background-image: -webkit-gradient(linear, 0% 0%, 90% 100%, from(#fc6), to(#f69));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 1.5em;
+}
+
+.content-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*== CARDS ==*/
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.card {
+    height: 70vh;
+    width: 55vh;
+    background-color: rgb(59, 48, 99);
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px 0 rgba(38, 31, 63, .5), -3px -3px 10px 0 rgba(88, 72, 145, .3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: ease 300ms;
+}
+
+.card.one:hover {
+    box-shadow: 0px 0px 0px 3px #7057c1, 0px 0px 0px 3px #7159c1;
+}
+
+.card.two:hover {
+    box-shadow: 0px 0px 0px 3px rgb(253, 149, 31), 0px 0px 0px 3px rgb(253, 149, 31);
+}
+
+.card.three:hover {
+    box-shadow: 0px 0px 0px 3px rgb(4, 211, 97), 0px 0px 0px 3px rgb(4, 211, 97);
+}
+
+.number-border {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.number-border.one {
+    border: 2px solid #7159c1;
+}
+
+.number-border.two {
+    border: 2px solid rgb(253, 149, 31);
+}
+
+.number-border.trhee {
+    border: 2px solid rgb(4, 211, 97);
+}
+
+.number {
+    text-align: center;
+}
+
+.number.one {
+    color: #7159c1;
+}
+
+.number.two {
+    color: rgb(253, 149, 31);
+}
+
+.number.three {
+    color: rgb(4, 211, 97);
+}
+
+.card img {
+    margin: 1.5em 0 2em;
+    max-height: 100px;
+}
+
+.card p {
+    text-align: center;
+    max-width: 75%;
+    color: gray;
+    line-height: 24px;
+}
+
+.card.one p span {
+    color: #7159c1;
+}
+
+.card.two p span {
+    color: rgb(253, 149, 31);
+}
+
+.card.three p span {
+    color: rgb(4, 211, 97);
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    padding-top: 2.5em;
+}
+
+.card-info p {
+    text-align: center;
+    margin: auto;
+    color: whitesmoke;
+    opacity: 0.9;
+}
+
+.card-price {
+    text-align: center;
+    filter: brightness(90%);
+    border-radius: 20px;
+    padding: 0 1em;
+}
+
+.one .card-price {
+    background-color: #7057c1;
+}
+
+.two .card-price {
+    background-color: rgb(253, 149, 31);
+}
+
+.three .card-price {
+    background-color: rgb(4, 211, 97);
+}
